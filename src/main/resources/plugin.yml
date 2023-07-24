@@ -1,0 +1,4 @@
+name: TeamsPlugin
+version: '${project.version}'
+main: eextr0.teamsplugin.TeamsPlugin
+api-version: '1.20'
