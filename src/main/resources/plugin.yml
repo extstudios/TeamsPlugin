@@ -1,4 +1,79 @@
 name: TeamsPlugin
-version: '${project.version}'
+version: '1.0'
 main: eextr0.teamsplugin.TeamsPlugin
 api-version: '1.20'
+
+permissions:
+  teams.commands.*:
+    default: op
+    description: Permission to use all TeamsPlugin commands
+    children:
+      - teams.commands
+      - teams.basic
+      - teams.modify
+      - teams.points.modify
+      - teams.set.teamname
+      - teams.set.scoreboardlocation
+  teams.basic:
+    default: op
+    description: Permission to use basic commands (general players)
+    children:
+      - teams.leaderboard
+      - teams.view
+  teams.modify:
+    default: op
+    description: Permission to use all commands that modify teams
+    children:
+      - teams.add
+      - teams.remove
+      - teams.auto
+      - teams.reset
+  teams.points.modify:
+    default: op
+    description: Permission to use all commands that modify team points
+    children:
+      - teams.points.add
+      - teams.points.remove
+      - teams.points.reset
+
+  teams.commands:
+    default: op
+    description: Permission to use TeamsPlugin commands
+  teams.add:
+    default: op
+    description: Permission to use the '/team add' command
+  teams.remove:
+    default: op
+    description: Permission to use the '/team remove' command
+  teams.view:
+    default: op
+    description: Permission to use the '/team view' command
+  teams.auto:
+    default: op
+    description: Permission to use the '/team auto' command
+  teams.reset:
+    default: op
+    description: Permission to use the '/team reset' command
+  teams.leaderboard:
+    default: op
+    description: Permission to use the '/team leaderboard' command
+  teams.set.teamname:
+    default: op
+    description: Permission to use the '/team set teamname' command
+  teams.set.scoreboardlocation:
+    default: op
+    description: Permission to use the '/team set scoreboardlocation' command
+  teams.points.add:
+    default: op
+    description: Permission to use the '/team points add' command
+  teams.points.remove:
+    default: op
+    description: Permission to use the '/team points remove' command
+  teams.points.reset:
+    default: op
+    description: Permission to use the '/team points reset' command
+
+commands:
+  teams:
+    permissions: teams.commands
+    descriptions: run teams commands

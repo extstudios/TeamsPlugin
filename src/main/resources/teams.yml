@@ -1,0 +1,13 @@
+Teams:
+  Team1:
+    name: team1
+    teamColor: Red
+  Team2:
+    name: team2
+    color: Dark_Purple
+  Team3:
+    name: team3
+    color: Gold
+  Team4:
+    name: team4
+    color: Green

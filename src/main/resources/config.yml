@@ -1,0 +1,5 @@
+world: 'world'
+scoreboardSize: 13
+ScoreboardTitleColor: 'Gold'
+scoreboardTeamNameColor: 'Light_Purple'
+scoreboardPointsColor: 'Aqua'

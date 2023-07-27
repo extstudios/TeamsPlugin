@@ -1,0 +1,23 @@
+messages:
+  error:
+    unknownCommand: "&cUnknown command."
+    noPermission: "&cYou do not have permission to use that command"
+    playerNotFound: "&cCould not find player with name: %player%"
+    invalidTeam: "&cCould not find team with name: %team%"
+    playerNotOnTeam: "&c%player% is not on a team"
+    amountNotNumber: "&c the amount must be a number"
+
+  commands:
+    confirmPlayerAddedToTeam: "Player %player% has been added to team %team%."
+    confirmPlayerRemovedFromTeam: "Player %player% has been removed from team %team%"
+    tellPlayerAddedToTeam: "You have been added to team %team%."
+    tellPlayerRemovedFromTeam: "You have been removed from team %team%"
+    teamCleared: "All players have been removed from team %team%"
+    teamNameChanged: "The display name for %team% has been changed to %newTeamName%"
+    noPlayersInTeam: "There are no players in team %team%"
+    scoreboardLocationSet: "The scoreboard location has been set to your current location"
+    checkTeam: "%player% is on team: %team%"
+    leaderboard: "%team%: %points%"
+    pointsAdded: "%amount% points have been added to %team%"
+    pointsRemoved: "%amount% points have been removed from %team%"
+    pointsReset: "Points for %team% have been reset"
