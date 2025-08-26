@@ -93,5 +93,5 @@ messages:
     pointsRemoved: "%amount% points have been removed from %team%"
     pointsReset: "Points for %team% have been reset"
 ```
-##Permissions
+## Permissions  
 Declared in plugin.yml (all default to op). There’s also a wildcard node with children.
